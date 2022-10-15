@@ -1,0 +1,290 @@
+{% extends "base.html" %}
+
+{%block content%}
+<head>
+  <style>
+
+
+
+  body {
+
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;
+  color:black;}
+
+  .margin {margin-bottom: 45px;}
+
+
+  .container-fluid {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  .li{
+    font-weight:bold;
+
+  }
+
+  h3{
+  color:black;}
+  </style>
+</head>
+<body>
+
+<!-- Navbar nhi h -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="/about_us">Devendra Saini</a>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="/static/krocks.JPG" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="240" height="320">
+  <p>I am a Pune based guy who writes codes in python and other coding languages.<br> But Python is favourite.</p>
+
+</div>
+
+<div class="container-fluid text-center">
+<br>
+  <p><i class="bi bi-star-fill"></i> <b>Cognizant: </b> <i>1.5 years experience</i></p>
+
+
+  <h3 align="left">My Projects </h3>
+
+  <!--for the table-->
+  <div class="container-fluid bg-2 text-center">
+    <table class="table table-bordered table-dark">
+      <thead>
+      <tr>
+        <th scope="col">Sr.</th>
+        <th scope="col">Project Name</th>
+        <th scope="col">Team Size</th>
+        <th scope="col">Programming Languages Used</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Koel_GPS</td>
+        <td>8</td>
+        <!--      yahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+        <td >
+          <ol class="list-group-item list-group-item-dark" >
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Frontend</div>
+                <pre>HTML  CSS  Bootstrap  Javascript</pre>
+              </div>
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Backend</div>
+                <pre>Python</pre>
+              </div>
+
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Database</div>
+                <pre>MongoDB</pre>
+              </div>
+
+            </li>
+          </ol>
+        </td>
+        <!--      yahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Crossword-ination</td>
+        <td>1</td>
+        <td >
+          <ol class="list-group-item list-group-item-dark" >
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Frontend</div>
+                <pre>Tkinter(GUI providing module)</pre>
+              </div>
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Backend</div>
+                <pre>Python</pre>
+                (was hard coded so no DB)
+              </div>
+
+            </li>
+
+
+            </li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Industrial Workshop Magmt System</td>
+        <td>2</td>
+        <td >
+          <ol class="list-group-item list-group-item-dark" >
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Frontend</div>
+                <pre>VB.net</pre>
+              </div>
+
+            </li>
+
+
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Database</div>
+                <pre>MS-Access</pre>
+              </div>
+
+            </li>
+          </ol>
+        </td>
+
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <a href="https://github.com/devwithsmile?tab=repositories" >
+    <div class="d-grid gap-2 col-6 mx-auto" >
+      <button class="btn btn-primary" type="button"><i class="bi bi-github">  Click Here To See all the Projects that are on my GitHUB </i></button>
+
+    </div>
+  </a>
+  <br>
+
+</div>
+
+
+
+<!-- Second Container -->
+<div class="container-fluid text-center">
+  <br>
+  <h3 class="margin">My Education?</h3>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <!--            <img src="..." class="d-block w-100" alt="...">-->
+
+        <table class="table table-success table-striped">
+          <thead>
+          <tr>
+
+            <th scope="col">Education</th>
+            <th scope="col">School/College</th>
+            <th scope="col">percentage scored</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+
+            <td>MCA</td>
+            <td>Pratibha Institute of Business Management</td>
+            <td>results not yet declared</td>
+          </tr>
+          <tr>
+
+            <td>BCA</td>
+            <td>Pratibha College of Commerce and Computer Studies</td>
+            <td>69.7</td>
+          </tr>
+          <tr>
+
+            <td>HSC</td>
+            <td>Dr. D.Y.Patil ACS</td>
+            <td>61.8</td>
+          </tr>
+          <tr>
+
+            <td>SSC</td>
+            <td>Judson High School</td>
+            <td>72.4</td>
+          </tr>
+
+          </tbody>
+        </table>
+
+
+
+        <!--            end here-->
+
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <!--            <img src="..." class="d-block w-100" alt="...">-->
+        <div class="table table-success table-striped">
+
+          <ul>
+            <h6 style="color:red">My certifications   </h6>
+            <a href="https://udemy.com/certificate/UC-c6662495-6597-4f30-af29-4aea82025224"> <li>Flask-certification</li></a>
+            <a href="https://udemy.com/certificate/UC-dfc2c741-283f-49ef-9e0f-1204cc3c16cc"><li>Python-certification</li></a>
+          </ul>
+          <br>
+        </div>
+
+        <!--            <ends here>-->
+
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="shadow p-3 mb-5 bg-body rounded">
+  <h3 class="">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p align="left"> <b>Email-id :</b> devsaini9139@gmail.com</p>
+      <p align="left"><b>Mobile No :</b> 7972221220</p>
+      <p align="left"><b>Address :</b> K-603, Mahindra Royale, Pimpri, Pune-411018. </p>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+
+  <p>Please give your feedback ! </p>
+</footer>
+
+</body>
+
+
+{%endblock%}
