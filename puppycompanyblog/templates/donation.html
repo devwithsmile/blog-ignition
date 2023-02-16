@@ -1,0 +1,33 @@
+{%extends "base.html" %}
+{%block content%}
+
+<style>
+    body{
+    background-image: url('/static/donations.jpg');
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: 40em 60em;
+    }
+    h6{
+        font-size: large;
+    }
+</style>
+<body>
+<div class="jumbotron" >
+    <h1 align="center"><pre> <span style="color:white">Donati</span><span>on Page</span></pre></h1><br>
+    <h6 align="center" ><pre> <span style="color:white">  Hey Would You Like </span><span>To Donate On Our Page?</span></pre></h6><br><br>
+    <form  class="form-control form-control-lg" action="{{url_for('users.payment')}}" method="post">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{public_key}}"
+                data-amount="20" data-name="blogging"
+                data-description="donation" data-locale="auto"
+                data-zip-code="true"
+        >
+
+        </script>
+
+    </form>
+
+</div>
+</body>
+
+{% endblock %}

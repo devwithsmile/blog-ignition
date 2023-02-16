@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+{%block content%}
+<head>
+  <style>
+
+    body {
+      color: #f5f6f7;
+    }
+
+    p {font-size: 16px;
+    color:black;}
+
+    .margin {margin-bottom: 45px;}
+
+    .container-fluid {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    
+    .li{
+      font-weight:bold;
+    }
+
+    h3{
+      color:black;
+    }
+
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid rgb(224, 191, 191);
+}
+
+th {
+  background-color: #f4d0d0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+table{
+  color:rgb(0, 0, 0);
+  
+}
+
+
+  </style>
+</head>
+
+<body>
+<!-- Navbar nhi h -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <h3 style="height: 5%;">Who Am I?</h3>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="shadow p-3 mb-5 bg-body rounded" style="height: 90%;width:97%; border: 5px solid;">
+  
+    <div class="container-fluid text-center" style="height: 20%;">
+      <h5 style="color: black; height:35%">Devendra Saini</h5>
+      <img src="/static/krocks.JPG" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="240" height="320">
+      <p>I am a Pune based guy writing codes in <i>Python</i>&#128516; !</p>
+      <p style="text-align: center;"><i class="bi bi-star-fill"></i> <b>Cognizant: </b> <i>1.5 years experience</i></p>
+    </div>
+ 
+  <br>
+  
+</div>
+
+<div class="container-fluid text-center">
+ 
+  <h3 align ="align-items-center">My Projects </h3>
+
+  <!--for the table-->
+  <div class="container-fluid bg-2 text-center">
+    
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Project Name</th>
+          <th>Team Size</th>
+          <th>Technologies Used</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Koel_GPS</td>
+          <td>8</td>
+          <td>
+            <ul>
+              <li>Frontend: HTML, CSS, Bootstrap, JavaScript</li>
+              <li>Backend: Python</li>
+              <li>Database: MongoDB</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Crossword-ination</td>
+          <td>1</td>
+          <td>
+            <ul>
+              <li>Frontend: Tkinter (GUI providing module)</li>
+              <li>Backend: Python (hard coded, no DB)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Industrial Workshop Magmt System</td>
+          <td>2</td>
+          <td>
+            <ul>
+              <li>Frontend: VB.net</li>
+              <li>Database: MS-Access</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>CloudBoost</td>
+          <td>5</td>
+          <td>
+            <ul>
+              <li>AWS, Docker, Python, MakeFile</li>
+              <li>Also did ticket based tech support on this <br> which included GCP and Azure as well.</li>
+            </ul>
+          </td>
+        </tr>
+
+
+      </tbody>
+    </table>
+    
+
+
+
+
+  </div>
+
+
+</div>
+
+
+
+<!-- Second Container -->
+<div class="container-fluid text-center">
+  <br>
+  <h3 class="margin">My Qualification and Certifications  </h3>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <!--            <img src="..." class="d-block w-100" alt="...">-->
+
+
+
+
+
+        <table style="border-collapse: collapse; width: 100%;">
+          <thead style="background-color: #28a745; color: #fff;">
+            <tr>
+              <th style="padding: 10px; text-align: left;">Education</th>
+              <th style="padding: 10px; text-align: left;">School/College</th>
+              <th style="padding: 10px; text-align: left;">Percentage Scored</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #f8f9fa;">
+              <td style="padding: 10px;">MCA</td>
+              <td style="padding: 10px;">Pratibha Institute of Business Management</td>
+              <td style="padding: 10px;">82.3</td>
+            </tr>
+            <tr style="background-color: #e2e3e5;">
+              <td style="padding: 10px;">BCA</td>
+              <td style="padding: 10px;">Pratibha College of Commerce and Computer Studies</td>
+              <td style="padding: 10px;">69.7</td>
+            </tr>
+            <tr style="background-color: #f8f9fa;">
+              <td style="padding: 10px;">HSC</td>
+              <td style="padding: 10px;">Dr. D.Y.Patil ACS</td>
+              <td style="padding: 10px;">61.8</td>
+            </tr>
+            <tr style="background-color: #e2e3e5;">
+              <td style="padding: 10px;">SSC</td>
+              <td style="padding: 10px;">Judson High School</td>
+              <td style="padding: 10px;">72.4</td>
+            </tr>
+          </tbody>
+        </table>
+        
+
+
+        <!--            end here-->
+
+
+
+      </div>
+
+
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <!--            <img src="..." class="d-block w-100" alt="...">-->
+        <table class="border-collapse: collapse; width: 100%;">
+          <thead>
+            <tr>
+              <th>Certification</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Python Certification</td>
+              <td><a href="https://udemy.com/certificate/UC-dfc2c741-283f-49ef-9e0f-1204cc3c16cc">Click Here to see my python certificate</a></td>
+            </tr>
+            
+            <tr style="background-color: #e2e3e5;">
+              <td>Flask Certification</td>
+              <td><a href="https://udemy.com/certificate/UC-c6662495-6597-4f30-af29-4aea82025224">Click Here to see my flask certificate</a></td>
+            
+            </tr>
+
+            <tr>
+              <td>Docker Certification</td>
+              <td><a href="https://.udemy.com/certificate/UC-6cf57e1e-82e7-4862-85a9-43f6817b9612">Click Here to see my Docker certificate</a></td>
+            
+            </tr>
+
+            <tr style="background-color: #e2e3e5;">
+              <td>PCEP(Python Institute)</td>
+              <td><a href="">Coming Soon, No need to click On me right Now</a></td>
+            
+            </tr>
+
+            
+
+          </tbody>
+        </table>
+
+
+        <!--            <ends here>-->
+
+      </div>
+
+    </div>
+    
+    <br><br>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+   
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+<br>
+<a href="https://github.com/devwithsmile?tab=repositories" >
+  <div class="d-grid gap-2 col-6 mx-auto" >
+    <button class="btn btn-primary" type="button"><i class="bi bi-github">  Click Here To See all the Projects that are on my GitHUB </i></button>
+
+  </div>
+</a>
+<br>
+<!-- Third Container (Grid) -->
+<div class="shadow p-3 mb-5 bg-body rounded">
+  <h3 class="">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p align="left"> <b>Email-id :</b> devsaini7972@gmail.com</p>
+      <p align="left"><b>Mobile No :</b> 7972221220</p>
+      <p align="left"><b>Address :</b> K-603, Mahindra Royale, Pimpri, Pune-411018. </p>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+
+  <p>Please give your feedback ! <b style="color: red;">&hearts;</b></p>
+</footer>
+
+</body>
+
+
+{%endblock%}
