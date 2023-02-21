@@ -73,9 +73,9 @@
 
 
   .card {
- width: 320px;
- height: 350px;
- padding: 2%;
+ width: 440px;
+ height: 280px;
+ padding: 3%;
  background: rgb(255, 255, 255);
  border-bottom: 2px solid blueviolet;
  border-right: 2px solid blueviolet;
@@ -218,7 +218,7 @@ button:active {
             <div class="card__content-body">
               <p class="card-text">{{ post.text[:100] }}...</p>
             </div>
-<br>
+
 
             <div class="card__content-footer" style="display:flex; flex-wrap:wrap;">
               <p style="display: inline-block; width: 50%; height: 20px; background: gray; margin: 5px;"><a href="{{ url_for('users.user_posts', username=post.author.username) }}">Written By: {{ post.author.username }}</a></p>
