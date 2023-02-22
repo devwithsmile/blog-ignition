@@ -34,7 +34,7 @@
       margin-bottom: 0;
     }
 
-    input, textarea, button {
+    button {
       padding: 8px 15px;
       border-radius: 5px !important;
       margin: 5px 0px;
@@ -44,82 +44,172 @@
       font-weight: 300;
     }
 
-    input:focus, textarea:focus {
-      -moz-box-shadow: none !important;
-      -webkit-box-shadow: none !important;
-      box-shadow: none !important;
-      border: 1px solid #00BCD4;
-      outline-width: 0;
-      font-weight: 400;
-    }
+    
+   
 
-    .btn-block {
-      text-transform: uppercase;
-      font-size: 15px !important;
-      font-weight: 400;
-      height: 43px;
-      cursor: pointer;
-    }
+  .login-box {
+  position: absolute;
+  top: 52%;
+  left: 49%;
+  width: 580px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
 
-    .btn-block:hover {
-      color: #fff !important;
-    }
+.login-box .user-box {
+  position: relative;
+}
 
-    button:focus {
-      -moz-box-shadow: none !important;
-      -webkit-box-shadow: none !important;
-      box-shadow: none !important;
-      outline-width: 0;
-    }
-    .btn-circle {
-      display: inline-block;
-      width: 100px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: rgb(73, 181, 118);
-      border: none;
-      font-weight: bold;
-      
-    }
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
 
-    .btn-circle:hover {
-      background-color: #aaa;
-      cursor: pointer;
-    }
+.login-box .user-box textarea{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box .user-box textarea:focus ~ label,
+.login-box .user-box textarea:valid ~ label {
+
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03f40f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03f40f,
+              0 0 25px #03f40f,
+              0 0 50px #03f40f,
+              0 0 100px #03f40f;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03f40f);
+  animation: btn-anim1 2s linear infinite;
+}
+.abcbutton {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
 
   </style>
-<br>
-  <div style="box-shadow: 0 0 10px rgba(0,0,0,0.5);height: 500px;text-align: center;">
-    <br>
-    <h3 style="align-items: center; color: rgb(19, 61, 77);">Create Your Blog Here</h3>
-    <br>
-    <div class="container">
-      <form class="form-group" method="POST">
-        {{ form.hidden_tag() }}
 
-        <div class="form-group">
-          <div class="form-floating">
-            {{ form.title(class="form-control", id="title1", placeholder="Enter Your Title Here") }}
-            {{ form.title.label(class="form-control-label", for="title1") }}
-          </div>
-        </div>
+  <!-- ################################################################# -->
 
+  <div class="login-box">
+ 
+    <form>
+
+      <div class="user-box">
+        {{form.title()}}
+        <label>Blog Title</label>
+      </div>
+
+      <div class="user-box">
         <br>
+        {{form.text(style="width: 500px; height: 100px;")}}
+        <!-- <textarea required="" name="" type="text" style="width: 300px; height: 100px;"></textarea> -->
+        <label >Your BLOG</label>
+       
+      </div>
 
-        <div class="form-group">
-          <div class="form-floating">
-            {{ form.text(class="form-control", id="title2", placeholder="Enter Your Blog Here",style="height: 220px;") }}
-            {{ form.text.label(class="form-control-label", for="title2") }}
-          </div>
-        </div>
 
-        <br>
-
-        <div >
-          {{ form.submit(class="btn-circle" ) }}
-        </div>
-
-      </form>
-    </div>
+     
+      
+      <center>
+        <a href="#">
+          
+          {{ form.submit(class='abcbutton') }}
+          <span>
+            
+          </span>
+          
+        </a>
+    </center>
+    </form>
   </div>
 {% endblock content %}

@@ -8,4 +8,4 @@ class BlogPostForm(FlaskForm):
     # we'll grab the date automatically from the Model later
     title = StringField('Enter Your Title Here', validators=[DataRequired()])
     text = TextAreaField('Enter Your Blog\'s Text Here', validators=[DataRequired()])
-    submit = SubmitField('BlogPost')
+    submit = SubmitField('POST')
