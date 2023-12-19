@@ -21,7 +21,7 @@ BlogIgnition is a dynamic blogging web application that empowers users to create
 
 **Command:**
 ```bash
-docker run -d -p 5000:5000 devsaini/blogignition
+docker run -d -p 5000:5000 devsaini/blogignition:v2
 ```
 
 **Access:** 
